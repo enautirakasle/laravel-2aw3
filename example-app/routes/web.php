@@ -5,7 +5,8 @@ use App\Http\Controllers\NoteController;
 
 
 Route::get('/', function () {
-    return "view('welcome')";
+    return view('welcome');
 });
 
 Route::get('/note', [NoteController::class, 'index']);
+
